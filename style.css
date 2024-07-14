@@ -1,0 +1,76 @@
+/* Main CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* border: 5px solid red; */
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+
+.gridWrap {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    width: 50%;
+}
+
+.content {
+    border: 1px solid;
+}
+
+.navWrap {
+    background-color: rgba(230, 240, 244, 1);
+    display: flex;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    overflow-y: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.navWrap .nameDesc .photoName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    /* margin: auto; */
+}
+
+.intro {
+    /* align-items: end; */
+    background-image: url("/public/assets/images/infoSectionImg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionInfo {
+    border: 1px solid orange;
+    padding: 40px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
